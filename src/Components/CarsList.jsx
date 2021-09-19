@@ -60,9 +60,9 @@ const CarsList = () => {
     getDateFilteredData(day)
   }
     return (
-      <div>
-        <input type="date" value={date} onChange={(e)=>handleDate(e.target.value)} />
-        <InfiniteScroll
+      <div style={{textAlign:"center",marginTop:"40px"}}>
+        <input type="date"  value={date} onChange={(e)=>handleDate(e.target.value)} />
+        <InfiniteScroll style={{textAlign:"left"}}
           dataLength={items.length} //This is important field to render the next data
           next={fetchData}
           hasMore={hasMore}
