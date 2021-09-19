@@ -10,7 +10,7 @@ const CardDetails = (props) => {
 
         <div className="col-sm-4 my-2" >
       <div className="card shadow-sm w-100" style={{ minHeight: 225 }}>
-        <div className="card-body">
+        <div className="card-body" style={{cursor:"pointer"}}>
                 <h5 className="card-title text-center h2">Accident-Id : {collision_id}</h5>
                 <h6 className="card-subtitle mb-2 text-muted text-center">Day - {crash_date}</h6>
                 <p className="card-text">Time - {crash_time}</p>

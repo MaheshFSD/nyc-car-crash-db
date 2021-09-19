@@ -11,7 +11,7 @@ function CarCard(props) {
         <div className="col-sm-4 my-2" >
       <div className="card shadow-sm w-100" style={{ minHeight: 225 }}>
         <div className="card-body">
-            <Link style={{textDecoration:"none",color:"#333"}} to={{pathname:`/cars/${id}`,state:{data:props}}}>
+            <Link style={{textDecoration:"none",color:"#333",cursor:"pointer"}} to={{pathname:`/cars/${id}`,state:{data:props}}}>
                 <h5 className="card-title text-center h2">Accident Id - :{collision_id}</h5>
                 <h6 className="card-subtitle mb-2 text-muted text-center">Accident happened On: {crash_date}</h6>
                 <p className="card-text"><b>Crash Time - </b>{crash_time}</p>
